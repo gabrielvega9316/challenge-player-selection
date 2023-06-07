@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "9b0e87f0-6e60-4e06-a0a4-d1f9181487d7",
+		"name": "test-player-selection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21346203"
+	},
+	"item": [
+		{
+			"name": "store-player",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"player name 2\",\r\n    \"position\": \"defense\",\r\n    \"playerSkills\": [\r\n        {\r\n            \"skill\": \"attack\",\r\n            \"value\": 70\r\n        },\r\n        {\r\n            \"skill\": \"speed\",\r\n            \"value\": 80\r\n        },\r\n        {\r\n            \"skill\": \"stamina\",\r\n            \"value\": 50\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/api/player",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"player"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getById-player",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/api/player/2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"player",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-players",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/api/player",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"player"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-player",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test2\",\r\n    \"position\": \"defender\",\r\n    \"playerSkills\": [\r\n        {\r\n            \"skill\": \"speed\",\r\n            \"value\": 50\r\n        },\r\n        {\r\n            \"skill\": \"attack\",\r\n            \"value\": 40\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/api/player/2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"player",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-player",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:3000/api/player/4",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"player",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-team",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n     {\r\n        \"position\": \"defense\",\r\n         \"mainSkill\": \"strength\",\r\n         \"numberOfPlayers\": 2\r\n     }\r\n ]    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/api/team/process",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"team",
+						"process"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
