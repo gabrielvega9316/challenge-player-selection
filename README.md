@@ -4,7 +4,7 @@
 - SQLite database
 
  This challenge does not require any additional library. DO NOT MODIFY the composer.json or composer.lock file as that may result in a test failure.
- The project already contain a sample SQLite database at /database/database.sqlite. Please don´t change the database structure by creating a seed or migration file because this may also result in a test failure.
+ The project already contain a sample SQLite database at /database/database.sqlite.
 
 ### Installation
 
