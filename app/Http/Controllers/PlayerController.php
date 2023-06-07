@@ -111,15 +111,8 @@ class PlayerController extends Controller
         }
     }
 
-    public function destroy(Request $request, $player_id)
+    public function destroy($player_id)
     {
-        //Validacion por token
-        $token = $request->bearerToken(); //obtengo token
-        if (!$token) return response()->json(['message' => 'Unauthorized'], 401);
-        if ($token !== 'SkFabTZibXE1aE14ckpQUUxHc2dnQ2RzdlFRTTM2NFE2cGI4d3RQNjZmdEFITmdBQkE=') {
-            return response()->json(['message' => 'Unauthorized'], 401);
-        }
-
         $player = Player::find($player_id);
         DB::beginTransaction();
         try {
