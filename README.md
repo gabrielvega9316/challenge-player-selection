@@ -5,6 +5,9 @@
 
  This challenge does not require any additional library. DO NOT MODIFY the composer.json or composer.lock file as that may result in a test failure.
  The project already contain a sample SQLite database at /database/database.sqlite.
+ 
+### Documentation Postman
+[Documentation](https://github.com/gabrielvega9316/test-player-selection/blob/master/resources/docs/test-player-selection.postman_collection.json)
 
 ### Installation
 
